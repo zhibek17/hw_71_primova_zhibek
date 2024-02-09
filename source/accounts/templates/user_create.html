@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Регистрация{% endblock %}
+{% block menu %}<a class="nav-link" aria-current="page"  href="#">На главную</a>{% endblock %}
+
+{% block content %}
+<h1>Регистрация</h1>
+    {% include 'partial/form.html' with form_method="post" is_data=True value_submit='Зарегистрироваться'%}
+
+{% endblock %}
